@@ -3,160 +3,198 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="ROHIT PHOTOGRAPHY — cinematic wedding, portrait and couple photography.">
-<title>ROHIT PHOTOGRAPHY</title>
+<title>ROHIT PHOTOGRAPHY — Stories in Every Frame</title>
+<meta name="description" content="ROHIT PHOTOGRAPHY — Wedding, pre-wedding and portrait photography.">
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap');
-*{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
-body{background:#0b0b0b;color:#f5f1ea;font-family:Inter,Arial,sans-serif;line-height:1.6}
-a{color:inherit;text-decoration:none}
-.nav{position:fixed;top:0;left:0;width:100%;z-index:10;display:flex;justify-content:space-between;align-items:center;padding:22px 5%;background:linear-gradient(#090909dd,transparent);backdrop-filter:blur(4px)}
-.logo{font-family:"Cormorant Garamond",serif;font-size:28px;letter-spacing:3px}
-.navlinks{display:flex;gap:28px;font-size:13px;letter-spacing:1.5px;text-transform:uppercase}
-.navlinks a:hover{opacity:.65}
-.hero{height:100vh;min-height:680px;position:relative;display:flex;align-items:flex-end;overflow:hidden}
-.hero img{position:absolute;width:100%;height:100%;object-fit:cover;object-position:center 42%;filter:brightness(.62)}
-.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(transparent 25%,#080808 100%)}
-.hero-content{position:relative;z-index:2;padding:0 7% 9%;max-width:900px}
-.kicker{text-transform:uppercase;letter-spacing:5px;font-size:12px;margin-bottom:15px;color:#d9c7ad}
-h1{font-family:"Cormorant Garamond",serif;font-size:clamp(64px,11vw,150px);font-weight:500;line-height:.78;letter-spacing:-3px}
-.hero p{margin-top:25px;max-width:600px;color:#d0cbc4;font-size:16px}
-.btn{display:inline-block;margin-top:30px;border:1px solid #d7c7b0;padding:13px 24px;text-transform:uppercase;font-size:12px;letter-spacing:2px;transition:.25s}
-.btn:hover{background:#f2e8d8;color:#111}
-section{padding:110px 7%}
-.section-head{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:45px}
-.section-head h2{font-family:"Cormorant Garamond",serif;font-size:60px;font-weight:500}
-.section-head p{max-width:420px;color:#aaa;font-size:14px}
-.gallery{columns:3 280px;column-gap:18px}
-.card{break-inside:avoid;margin-bottom:18px;overflow:hidden;background:#151515}
-.card img{width:100%;display:block;transition:transform .6s ease;cursor:pointer}
-.card:hover img{transform:scale(1.035)}
-.services{background:#111;border-top:1px solid #242424;border-bottom:1px solid #242424}
-.service-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:#333}
-.service{background:#111;padding:38px 30px;min-height:210px}
-.service span{font-size:11px;letter-spacing:3px;color:#b9a58c}
-.service h3{font-family:"Cormorant Garamond",serif;font-size:34px;font-weight:500;margin:15px 0 10px}
-.service p{color:#aaa;font-size:14px}
-.about{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}
-.about img{width:100%;max-height:680px;object-fit:cover}
-.about h2{font-family:"Cormorant Garamond",serif;font-size:64px;font-weight:500;line-height:.95;margin-bottom:25px}
-.about p{color:#aaa;max-width:540px;margin-bottom:18px}
-.contact{text-align:center;background:#e8dfd2;color:#141414}
-.contact h2{font-family:"Cormorant Garamond",serif;font-size:76px;font-weight:500;line-height:.95}
-.contact p{margin:20px auto;max-width:520px;color:#555}
-.contact .btn{border-color:#222}
-.contact .btn:hover{background:#151515;color:#fff}
-footer{padding:35px 7%;display:flex;justify-content:space-between;color:#777;font-size:12px;letter-spacing:1px}
-.lightbox{position:fixed;inset:0;background:#000e;z-index:30;display:none;align-items:center;justify-content:center;padding:25px}
-.lightbox.open{display:flex}
-.lightbox img{max-width:94vw;max-height:90vh;object-fit:contain}
-.close{position:absolute;right:25px;top:18px;font-size:35px;cursor:pointer;color:white}
-@media(max-width:800px){
- .nav{padding:18px 5%}.navlinks{gap:12px;font-size:10px}
- .hero-content{padding:0 6% 13%}.hero{min-height:620px}
- section{padding:75px 6%}.section-head{display:block}.section-head h2{font-size:48px;margin-bottom:12px}
- .service-grid{grid-template-columns:1fr}.about{grid-template-columns:1fr;gap:35px}.about h2{font-size:52px}
- .contact h2{font-size:58px} footer{display:block;text-align:center} footer div+div{margin-top:10px}
-}
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@300;400;500&display=swap');
+:root{--bg:#0a0908;--text:#f4efe8;--muted:#aaa29a;--line:#2b2723;--accent:#c9a46a}
+*{box-sizing:border-box} html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,Arial,sans-serif;font-weight:300}
+a{color:inherit;text-decoration:none}.nav{position:fixed;z-index:10;top:0;left:0;right:0;display:flex;justify-content:space-between;align-items:center;padding:22px 5vw;background:linear-gradient(#090807cc,transparent);backdrop-filter:blur(3px)}
+.logo{font-family:"Cormorant Garamond",serif;font-size:25px;letter-spacing:.13em}.links{display:flex;gap:28px;font-size:12px;letter-spacing:.12em;text-transform:uppercase}
+.hero{min-height:100vh;display:grid;place-items:center;position:relative;overflow:hidden}
+.hero img{position:absolute;width:100%;height:100%;object-fit:cover;object-position:center 32%;filter:brightness(.55)}
+.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#0009,#0001 60%,#0006)}
+.hero-content{position:relative;z-index:1;width:min(1100px,90%);padding-top:90px}
+.kicker{font-size:11px;letter-spacing:.32em;text-transform:uppercase;color:#ddd;margin-bottom:18px}
+h1{font-family:"Cormorant Garamond",serif;font-size:clamp(64px,11vw,150px);font-weight:400;line-height:.78;margin:0 0 30px;letter-spacing:-.03em}
+.hero p{max-width:470px;color:#ddd;line-height:1.8;font-size:15px}.cta{display:inline-flex;margin-top:18px;padding:14px 22px;border:1px solid #ffffff66;font-size:11px;letter-spacing:.18em;text-transform:uppercase;transition:.25s}.cta:hover{background:#fff;color:#111}
+.section{padding:110px 5vw}.intro{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:end;max-width:1200px;margin:auto}
+.eyebrow{font-size:10px;letter-spacing:.28em;text-transform:uppercase;color:var(--accent)}h2{font-family:"Cormorant Garamond",serif;font-size:clamp(44px,6vw,76px);font-weight:400;line-height:.95;margin:15px 0}
+.copy{color:var(--muted);line-height:1.9;font-size:14px}.gallery{max-width:1250px;margin:30px auto 0;display:grid;grid-template-columns:repeat(12,1fr);gap:12px}
+.card{position:relative;overflow:hidden;background:#111}.card img{width:100%;height:100%;display:block;object-fit:cover;transition:transform .7s ease,filter .4s}.card:hover img{transform:scale(1.035);filter:brightness(.72)}
+.c1{grid-column:span 7;height:650px}.c2{grid-column:span 5;height:650px}.c3{grid-column:span 5;height:700px}.c4{grid-column:span 7;height:700px}.c5{grid-column:span 4;height:560px}.c6{grid-column:span 4;height:560px}.c7{grid-column:span 4;height:560px}.c8{grid-column:span 6;height:620px}.c9{grid-column:span 6;height:620px}.c10{grid-column:span 12;height:720px}
+.label{position:absolute;left:18px;bottom:16px;font-size:10px;letter-spacing:.2em;text-transform:uppercase;background:#0008;padding:8px 10px}
+.services{max-width:1200px;margin:auto;border-top:1px solid var(--line)}.service{display:grid;grid-template-columns:90px 1fr 2fr;gap:30px;padding:30px 0;border-bottom:1px solid var(--line);align-items:center}.num{color:var(--accent);font-size:12px}.service h3{font-family:"Cormorant Garamond",serif;font-size:34px;font-weight:400;margin:0}.service p{color:var(--muted);font-size:13px;line-height:1.7;margin:0}
+.contact{min-height:65vh;display:grid;place-items:center;text-align:center;border-top:1px solid var(--line)}.contact h2{font-size:clamp(55px,9vw,120px);margin-bottom:24px}.contact p{color:var(--muted);margin-bottom:30px}.footer{padding:28px 5vw;border-top:1px solid var(--line);display:flex;justify-content:space-between;color:#777;font-size:11px;letter-spacing:.08em}
+@media(max-width:800px){.links{display:none}.intro{grid-template-columns:1fr;gap:15px}.section{padding:80px 5vw}.gallery{display:grid;grid-template-columns:1fr 1fr}.card,.c1,.c2,.c3,.c4,.c5,.c6,.c7,.c8,.c9,.c10{grid-column:auto;height:430px}.c1,.c10{grid-column:1/-1;height:520px}.service{grid-template-columns:45px 1fr;gap:10px}.service p{grid-column:2}.footer{flex-direction:column;gap:10px}}
+
+.gallery-viewer{position:fixed;inset:0;background:#000f;z-index:50;display:none;align-items:center;justify-content:center;padding:5vh 5vw}
+.gallery-viewer.open{display:flex}.gallery-viewer img{max-width:92vw;max-height:88vh;object-fit:contain}
+.viewer-close,.viewer-prev,.viewer-next{position:absolute;border:0;background:#ffffff18;color:#fff;width:46px;height:46px;border-radius:50%;font-size:28px;cursor:pointer}
+.viewer-close{top:22px;right:22px}.viewer-prev{left:22px}.viewer-next{right:22px}
+.contact-actions{display:flex;justify-content:center;gap:12px;flex-wrap:wrap}
+button.cta{font:inherit;cursor:pointer}.booking-panel{display:none;position:relative;width:min(560px,92vw);margin:35px auto 0;text-align:left;padding:30px;border:1px solid #ffffff22;background:#111;box-shadow:0 25px 70px #000}
+.booking-panel.open{display:block}.booking-panel h3{font-family:"Cormorant Garamond",serif;font-size:38px;font-weight:400;margin:8px 0 20px}
+.booking-panel input,.booking-panel select,.booking-panel textarea{width:100%;margin:6px 0;padding:13px 14px;background:#0b0b0b;color:#eee;border:1px solid #ffffff22;font:inherit;outline:none}
+.booking-panel textarea{resize:vertical}.close-booking{position:absolute;right:14px;top:10px;background:none;border:0;color:#aaa;font-size:28px;cursor:pointer}
+@media(max-width:600px){.viewer-prev{left:8px}.viewer-next{right:8px}.gallery-viewer{padding:4vh 2vw}.gallery-viewer img{max-width:96vw}}
+
+
+.contact-details{display:flex;justify-content:center;gap:18px;flex-wrap:wrap;margin:20px auto 8px;color:#cfc7be;font-size:12px;letter-spacing:.03em}
+.contact-details a:hover{color:#fff}
+
 </style>
 </head>
 <body>
 <nav class="nav">
-  <a class="logo" href="#home">ROHIT PHOTOGRAPHY</a>
-  <div class="navlinks">
-    <a href="tel:+918010248780">Call</a>
-    <a href="#portfolio">Portfolio</a>
-    <a href="#services">Services</a>
-    <a href="#about">About</a>
-    <a href="#contact">Contact</a>
-  </div>
+  <a class="logo" href="#">ROHIT PHOTOGRAPHY</a>
+  <div class="links"><a href="#work">Work</a><a href="#services">Services</a><a href="#contact">Contact</a></div>
 </nav>
 
-<header class="hero" id="home">
-  <img src="images/photo-10.jpg" alt="Rohit Photography featured portrait">
+<header class="hero">
+  <img src="images/photo-1.jpg" alt="Bridal portrait">
   <div class="hero-content">
-    <div class="kicker">Wedding • Portrait • Stories</div>
-    <h1>Frames<br>That Feel.</h1>
-    <p>Cinematic photography for weddings, couples, portraits and the moments you never want to forget.</p>
-    <a class="btn" href="#portfolio">Explore Portfolio</a>
+    <div class="kicker">Wedding · Portrait · Stories</div>
+    <h1>Moments<br>That Stay.</h1>
+    <p>Timeless photographs with an honest, cinematic feel — crafted to bring you back to the feeling of the day.</p>
+    <a class="cta" href="#work">Explore the work</a>
   </div>
 </header>
 
-<section id="portfolio">
-  <div class="section-head">
-    <h2>Selected Work</h2>
-    <p>A curated collection of romantic portraits, wedding details and cinematic couple stories.</p>
+<section class="section">
+  <div class="intro">
+    <div><div class="eyebrow">The approach</div><h2>Real moments.<br>Beautifully framed.</h2></div>
+    <p class="copy">ROHIT PHOTOGRAPHY captures weddings, pre-weddings and portraits with a focus on emotion, natural connection and beautiful light. Every frame is designed to feel personal today — and timeless years from now.</p>
+  </div>
+</section>
+
+<section class="section" id="work">
+  <div class="intro" style="margin-bottom:40px">
+    <div><div class="eyebrow">Selected work</div><h2>Stories in<br>every frame.</h2></div>
+    <p class="copy">A selection of bridal portraits, intimate wedding moments, pre-wedding stories and editorial portraits.</p>
   </div>
   <div class="gallery">
-    <div class="card"><img src="images/photo-1.jpg" alt="Couple photography" loading="lazy"></div>
-    <div class="card"><img src="images/photo-4.jpg" alt="Wedding portrait" loading="lazy"></div>
-    <div class="card"><img src="images/photo-2.jpg" alt="Couple portrait" loading="lazy"></div>
-    <div class="card"><img src="images/photo-7.jpg" alt="Portrait photography" loading="lazy"></div>
-    <div class="card"><img src="images/photo-5.jpg" alt="Bridal portrait" loading="lazy"></div>
-    <div class="card"><img src="images/photo-8.jpg" alt="Bridal detail" loading="lazy"></div>
-    <div class="card"><img src="images/photo-9.jpg" alt="Wedding couple" loading="lazy"></div>
-    <div class="card"><img src="images/photo-6.jpg" alt="Fashion portrait" loading="lazy"></div>
-    <div class="card"><img src="images/photo-3.jpg" alt="Cinematic couple portrait" loading="lazy"></div>
-    <div class="card"><img src="images/photo-10.jpg" alt="Portrait" loading="lazy"></div>
+    <div class="card c1"><img src="images/photo-1.jpg" alt="Bridal portrait"><span class="label">Bridal</span></div>
+    <div class="card c2"><img src="images/photo-2.jpg" alt="Bridal portrait"><span class="label">Bridal</span></div>
+    <div class="card c3"><img src="images/photo-3.jpg" alt="Bridal detail"><span class="label">Details</span></div>
+    <div class="card c4"><img src="images/photo-4.jpg" alt="Pre-wedding couple"><span class="label">Pre-Wedding</span></div>
+    <div class="card c5"><img src="images/photo-5.jpg" alt="Pre-wedding couple"><span class="label">Pre-Wedding</span></div>
+    <div class="card c6"><img src="images/photo-6.jpg" alt="Wedding couple"><span class="label">Wedding</span></div>
+    <div class="card c7"><img src="images/photo-7.jpg" alt="Wedding couple"><span class="label">Wedding</span></div>
+    <div class="card c8"><img src="images/photo-8.jpg" alt="Portrait"><span class="label">Portrait</span></div>
+    <div class="card c9"><img src="images/photo-9.jpg" alt="Portrait"><span class="label">Portrait</span></div>
+    <div class="card c10"><img src="images/photo-10.jpg" alt="Portrait"><span class="label">Portrait</span></div>
   </div>
 </section>
 
-<section class="services" id="services">
-  <div class="section-head">
-    <h2>What I Capture</h2>
-    <p>Natural moments, intentional portraits and cinematic frames with a timeless feel.</p>
+<section class="section" id="services">
+  <div class="intro" style="margin-bottom:45px">
+    <div><div class="eyebrow">Services</div><h2>For days worth<br>remembering.</h2></div>
+    <p class="copy">From a quiet pre-wedding session to the energy of a full wedding day, photography is tailored around your story.</p>
   </div>
-  <div class="service-grid">
-    <div class="service"><span>01</span><h3>Wedding</h3><p>Emotions, rituals, details and candid moments from your special day.</p></div>
-    <div class="service"><span>02</span><h3>Couples</h3><p>Relaxed, romantic sessions designed around your story and connection.</p></div>
-    <div class="service"><span>03</span><h3>Portraits</h3><p>Editorial and cinematic portraits with polished, natural-looking light.</p></div>
+  <div class="services">
+    <div class="service"><div class="num">01</div><h3>Weddings</h3><p>Complete wedding-day coverage focused on candid emotions, family moments, portraits and the details that make your celebration yours.</p></div>
+    <div class="service"><div class="num">02</div><h3>Pre-Weddings</h3><p>Relaxed, cinematic couple sessions in locations that give your story space to breathe.</p></div>
+    <div class="service"><div class="num">03</div><h3>Portraits</h3><p>Editorial-style portraits with natural direction, thoughtful lighting and a polished final look.</p></div>
   </div>
 </section>
 
-<section class="about" id="about">
-  <img src="images/photo-9.jpg" alt="Wedding photography">
+<section class="section contact" id="contact">
   <div>
-    <div class="kicker">The Photographer</div>
-    <h2>Stories, honestly captured.</h2>
-    <p>I'm Rohit, a photographer focused on turning real moments into photographs that feel cinematic and personal.</p>
-    <p>From quiet glances to big celebrations, every frame is created with attention to light, emotion and detail.</p>
-    <a class="btn" href="#contact">Let's Create</a>
+    <div class="eyebrow">Let's create something timeless</div>
+    <h2>Your story<br>starts here.</h2>
+    <p>Available for weddings, pre-weddings and portrait sessions.</p>
+    <div class="contact-details">
+      <a href="tel:+91-8010248780">📞 +91 80102 48780</a>
+      <a href="mailto:rohitwaghade81@gmail.com">✉ rohitwaghade81@gmail.com</a>
+      <span>📍 Tiroda Road, Dongargaon</span>
+    </div>
+    <div class="contact-actions">
+      <a class="cta" href="https://wa.me/918010248780?text=Hello%20ROHIT%20PHOTOGRAPHY%2C%20I%27d%20like%20to%20discuss%20a%20photo%20session." target="_blank" rel="noopener">WhatsApp</a>
+      <a class="cta" href="https://instagram.com/rohittt______24" target="_blank" rel="noopener">Instagram</a>
+      <button class="cta" type="button" onclick="openBooking()">Book a Session</button>
+    </div>
+    <div class="booking-panel" id="bookingPanel" aria-hidden="true">
+      <button class="close-booking" type="button" onclick="closeBooking()">×</button>
+      <div class="eyebrow">Booking enquiry</div>
+      <h3>Tell me about your shoot.</h3>
+      <form id="bookingForm">
+        <input name="name" placeholder="Your name" required>
+        <input name="phone" placeholder="Phone / WhatsApp" required>
+        <select name="type" required>
+          <option value="">Select service</option>
+          <option>Wedding</option>
+          <option>Pre-Wedding</option>
+          <option>Portrait</option>
+          <option>Other</option>
+        </select>
+        <input name="date" type="date">
+        <textarea name="message" rows="4" placeholder="Tell me a little about your event..."></textarea>
+        <button class="cta" type="submit">Send Enquiry</button>
+      </form>
+    </div>
   </div>
 </section>
 
-<section class="contact" id="contact">
-  <div class="kicker">Available for bookings</div>
-  <h2>Let's create<br>something timeless.</h2>
-  <p>For wedding, couple, portrait or event photography enquiries, get in touch and share your date and location.</p>
-  <div style="display:flex;justify-content:center;gap:14px;flex-wrap:wrap;margin-top:28px">
-      <a class="btn" href="tel:+918010248780">📞 8010248780</a>
-      <a class="btn" href="https://wa.me/918010248780" target="_blank" rel="noopener">💬 WhatsApp</a>
-    </div>
-    <p style="margin-top:22px;font-size:14px;color:#555">📍 Tiroda Road, Dongargaon</p>
-</section>
 
-<footer>
-  <div>© 2026 ROHIT PHOTOGRAPHY</div>
-  <div>📍 Tiroda Road, Dongargaon • 📞 8010248780 ✉️ rohitwaghade81@gmail.com</div>
-</footer>
-
-<div class="lightbox" id="lightbox">
-  <div class="close" onclick="closeLightbox()">×</div>
-  <img id="lightboxImg" src="" alt="Expanded portfolio image">
+<div class="gallery-viewer" id="viewer" aria-hidden="true">
+  <button class="viewer-close" onclick="closeViewer()" aria-label="Close">×</button>
+  <button class="viewer-prev" onclick="prevImage()" aria-label="Previous">‹</button>
+  <img id="viewerImage" src="" alt="Gallery photo">
+  <button class="viewer-next" onclick="nextImage()" aria-label="Next">›</button>
 </div>
 
+<footer class="footer">
+  <span>© 2026 ROHIT PHOTOGRAPHY</span><span>Crafted for stories that last.</span>
+</footer>
+
 <script>
-document.querySelectorAll('.card img').forEach(img=>{
-  img.addEventListener('click',()=>{
-    document.getElementById('lightboxImg').src=img.src;
-    document.getElementById('lightbox').classList.add('open');
-  });
+const galleryImages = [...document.querySelectorAll('.gallery .card img')];
+let currentImage = 0;
+
+galleryImages.forEach((img, i) => {
+  img.addEventListener('click', () => openViewer(i));
+  img.style.cursor = 'zoom-in';
 });
-function closeLightbox(){document.getElementById('lightbox').classList.remove('open')}
-document.getElementById('lightbox').addEventListener('click',e=>{
-  if(e.target.id==='lightbox') closeLightbox();
+
+function openViewer(i){
+  currentImage = i;
+  document.getElementById('viewerImage').src = galleryImages[i].src;
+  document.getElementById('viewer').classList.add('open');
+  document.getElementById('viewer').setAttribute('aria-hidden','false');
+  document.body.style.overflow='hidden';
+}
+function closeViewer(){
+  document.getElementById('viewer').classList.remove('open');
+  document.getElementById('viewer').setAttribute('aria-hidden','true');
+  document.body.style.overflow='';
+}
+function prevImage(){openViewer((currentImage-1+galleryImages.length)%galleryImages.length)}
+function nextImage(){openViewer((currentImage+1)%galleryImages.length)}
+document.addEventListener('keydown', e => {
+  if(!document.getElementById('viewer').classList.contains('open')) return;
+  if(e.key==='Escape') closeViewer();
+  if(e.key==='ArrowLeft') prevImage();
+  if(e.key==='ArrowRight') nextImage();
+});
+
+function openBooking(){
+  const p=document.getElementById('bookingPanel');
+  p.classList.add('open'); p.setAttribute('aria-hidden','false');
+  p.scrollIntoView({behavior:'smooth',block:'center'});
+}
+function closeBooking(){
+  const p=document.getElementById('bookingPanel');
+  p.classList.remove('open'); p.setAttribute('aria-hidden','true');
+}
+document.getElementById('bookingForm').addEventListener('submit', function(e){
+  e.preventDefault();
+  const d = new FormData(this);
+  const text = `Hello ROHIT PHOTOGRAPHY,%0A%0AName: ${encodeURIComponent(d.get('name'))}%0APhone: ${encodeURIComponent(d.get('phone'))}%0AService: ${encodeURIComponent(d.get('type'))}%0ADate: ${encodeURIComponent(d.get('date')||'Not decided')}%0AMessage: ${encodeURIComponent(d.get('message')||'')}`;
+  window.open(`https://wa.me/918010248780?text=${text}`, '_blank');
 });
 </script>
+
 </body>
 </html>
