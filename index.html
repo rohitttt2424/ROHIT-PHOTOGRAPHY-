@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="ROHIT PHOTOGRAPHY — cinematic wedding, portrait and couple photography.">
+<title>ROHIT PHOTOGRAPHY</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap');
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:#0b0b0b;color:#f5f1ea;font-family:Inter,Arial,sans-serif;line-height:1.6}
+a{color:inherit;text-decoration:none}
+.nav{position:fixed;top:0;left:0;width:100%;z-index:10;display:flex;justify-content:space-between;align-items:center;padding:22px 5%;background:linear-gradient(#090909dd,transparent);backdrop-filter:blur(4px)}
+.logo{font-family:"Cormorant Garamond",serif;font-size:28px;letter-spacing:3px}
+.navlinks{display:flex;gap:28px;font-size:13px;letter-spacing:1.5px;text-transform:uppercase}
+.navlinks a:hover{opacity:.65}
+.hero{height:100vh;min-height:680px;position:relative;display:flex;align-items:flex-end;overflow:hidden}
+.hero img{position:absolute;width:100%;height:100%;object-fit:cover;object-position:center 42%;filter:brightness(.62)}
+.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(transparent 25%,#080808 100%)}
+.hero-content{position:relative;z-index:2;padding:0 7% 9%;max-width:900px}
+.kicker{text-transform:uppercase;letter-spacing:5px;font-size:12px;margin-bottom:15px;color:#d9c7ad}
+h1{font-family:"Cormorant Garamond",serif;font-size:clamp(64px,11vw,150px);font-weight:500;line-height:.78;letter-spacing:-3px}
+.hero p{margin-top:25px;max-width:600px;color:#d0cbc4;font-size:16px}
+.btn{display:inline-block;margin-top:30px;border:1px solid #d7c7b0;padding:13px 24px;text-transform:uppercase;font-size:12px;letter-spacing:2px;transition:.25s}
+.btn:hover{background:#f2e8d8;color:#111}
+section{padding:110px 7%}
+.section-head{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:45px}
+.section-head h2{font-family:"Cormorant Garamond",serif;font-size:60px;font-weight:500}
+.section-head p{max-width:420px;color:#aaa;font-size:14px}
+.gallery{columns:3 280px;column-gap:18px}
+.card{break-inside:avoid;margin-bottom:18px;overflow:hidden;background:#151515}
+.card img{width:100%;display:block;transition:transform .6s ease;cursor:pointer}
+.card:hover img{transform:scale(1.035)}
+.services{background:#111;border-top:1px solid #242424;border-bottom:1px solid #242424}
+.service-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:#333}
+.service{background:#111;padding:38px 30px;min-height:210px}
+.service span{font-size:11px;letter-spacing:3px;color:#b9a58c}
+.service h3{font-family:"Cormorant Garamond",serif;font-size:34px;font-weight:500;margin:15px 0 10px}
+.service p{color:#aaa;font-size:14px}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}
+.about img{width:100%;max-height:680px;object-fit:cover}
+.about h2{font-family:"Cormorant Garamond",serif;font-size:64px;font-weight:500;line-height:.95;margin-bottom:25px}
+.about p{color:#aaa;max-width:540px;margin-bottom:18px}
+.contact{text-align:center;background:#e8dfd2;color:#141414}
+.contact h2{font-family:"Cormorant Garamond",serif;font-size:76px;font-weight:500;line-height:.95}
+.contact p{margin:20px auto;max-width:520px;color:#555}
+.contact .btn{border-color:#222}
+.contact .btn:hover{background:#151515;color:#fff}
+footer{padding:35px 7%;display:flex;justify-content:space-between;color:#777;font-size:12px;letter-spacing:1px}
+.lightbox{position:fixed;inset:0;background:#000e;z-index:30;display:none;align-items:center;justify-content:center;padding:25px}
+.lightbox.open{display:flex}
+.lightbox img{max-width:94vw;max-height:90vh;object-fit:contain}
+.close{position:absolute;right:25px;top:18px;font-size:35px;cursor:pointer;color:white}
+@media(max-width:800px){
+ .nav{padding:18px 5%}.navlinks{gap:12px;font-size:10px}
+ .hero-content{padding:0 6% 13%}.hero{min-height:620px}
+ section{padding:75px 6%}.section-head{display:block}.section-head h2{font-size:48px;margin-bottom:12px}
+ .service-grid{grid-template-columns:1fr}.about{grid-template-columns:1fr;gap:35px}.about h2{font-size:52px}
+ .contact h2{font-size:58px} footer{display:block;text-align:center} footer div+div{margin-top:10px}
+}
+</style>
+</head>
+<body>
+<nav class="nav">
+  <a class="logo" href="#home">ROHIT PHOTOGRAPHY</a>
+  <div class="navlinks">
+    <a href="tel:+918010248780">Call</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#services">Services</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<header class="hero" id="home">
+  <img src="images/photo-10.jpg" alt="Rohit Photography featured portrait">
+  <div class="hero-content">
+    <div class="kicker">Wedding • Portrait • Stories</div>
+    <h1>Frames<br>That Feel.</h1>
+    <p>Cinematic photography for weddings, couples, portraits and the moments you never want to forget.</p>
+    <a class="btn" href="#portfolio">Explore Portfolio</a>
+  </div>
+</header>
+
+<section id="portfolio">
+  <div class="section-head">
+    <h2>Selected Work</h2>
+    <p>A curated collection of romantic portraits, wedding details and cinematic couple stories.</p>
+  </div>
+  <div class="gallery">
+    <div class="card"><img src="images/photo-1.jpg" alt="Couple photography" loading="lazy"></div>
+    <div class="card"><img src="images/photo-4.jpg" alt="Wedding portrait" loading="lazy"></div>
+    <div class="card"><img src="images/photo-2.jpg" alt="Couple portrait" loading="lazy"></div>
+    <div class="card"><img src="images/photo-7.jpg" alt="Portrait photography" loading="lazy"></div>
+    <div class="card"><img src="images/photo-5.jpg" alt="Bridal portrait" loading="lazy"></div>
+    <div class="card"><img src="images/photo-8.jpg" alt="Bridal detail" loading="lazy"></div>
+    <div class="card"><img src="images/photo-9.jpg" alt="Wedding couple" loading="lazy"></div>
+    <div class="card"><img src="images/photo-6.jpg" alt="Fashion portrait" loading="lazy"></div>
+    <div class="card"><img src="images/photo-3.jpg" alt="Cinematic couple portrait" loading="lazy"></div>
+    <div class="card"><img src="images/photo-10.jpg" alt="Portrait" loading="lazy"></div>
+  </div>
+</section>
+
+<section class="services" id="services">
+  <div class="section-head">
+    <h2>What I Capture</h2>
+    <p>Natural moments, intentional portraits and cinematic frames with a timeless feel.</p>
+  </div>
+  <div class="service-grid">
+    <div class="service"><span>01</span><h3>Wedding</h3><p>Emotions, rituals, details and candid moments from your special day.</p></div>
+    <div class="service"><span>02</span><h3>Couples</h3><p>Relaxed, romantic sessions designed around your story and connection.</p></div>
+    <div class="service"><span>03</span><h3>Portraits</h3><p>Editorial and cinematic portraits with polished, natural-looking light.</p></div>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <img src="images/photo-9.jpg" alt="Wedding photography">
+  <div>
+    <div class="kicker">The Photographer</div>
+    <h2>Stories, honestly captured.</h2>
+    <p>I'm Rohit, a photographer focused on turning real moments into photographs that feel cinematic and personal.</p>
+    <p>From quiet glances to big celebrations, every frame is created with attention to light, emotion and detail.</p>
+    <a class="btn" href="#contact">Let's Create</a>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="kicker">Available for bookings</div>
+  <h2>Let's create<br>something timeless.</h2>
+  <p>For wedding, couple, portrait or event photography enquiries, get in touch and share your date and location.</p>
+  <div style="display:flex;justify-content:center;gap:14px;flex-wrap:wrap;margin-top:28px">
+      <a class="btn" href="tel:+918010248780">📞 8010248780</a>
+      <a class="btn" href="https://wa.me/918010248780" target="_blank" rel="noopener">💬 WhatsApp</a>
+    </div>
+    <p style="margin-top:22px;font-size:14px;color:#555">📍 Tiroda Road, Dongargaon</p>
+</section>
+
+<footer>
+  <div>© 2026 ROHIT PHOTOGRAPHY</div>
+  <div>📍 Tiroda Road, Dongargaon • 📞 8010248780</div>
+</footer>
+
+<div class="lightbox" id="lightbox">
+  <div class="close" onclick="closeLightbox()">×</div>
+  <img id="lightboxImg" src="" alt="Expanded portfolio image">
+</div>
+
+<script>
+document.querySelectorAll('.card img').forEach(img=>{
+  img.addEventListener('click',()=>{
+    document.getElementById('lightboxImg').src=img.src;
+    document.getElementById('lightbox').classList.add('open');
+  });
+});
+function closeLightbox(){document.getElementById('lightbox').classList.remove('open')}
+document.getElementById('lightbox').addEventListener('click',e=>{
+  if(e.target.id==='lightbox') closeLightbox();
+});
+</script>
+</body>
+</html>
